@@ -41,11 +41,19 @@ const userSchema = new mongoose.Schema({
    
    
     address:{
-        type:String,
-        required:false,
-        lowercase:true,
-        trim:true,
-        default:""
+        "street":{
+            type:String
+        },
+       "suite":{
+           type:String
+       },
+       "city":{
+           type:String
+       },
+       "zipcode":{
+           type:String
+       }
+
 
     }
    
